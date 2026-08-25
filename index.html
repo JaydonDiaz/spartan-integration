@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>try{if(localStorage.getItem('spartan-theme')==='light'){document.documentElement.setAttribute('data-theme','light');}}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spartan Integration &amp; Consulting | Security Systems, Oviedo FL</title>
+  <meta name="description" content="Design, installation, and service for cameras, access control, alarms, and more — protecting homes and businesses across Central Florida.">
+  <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/icon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav" class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo">
+        <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M16,4 L26,8 V16 C26,22.5 21.5,27 16,29.5 C10.5,27 6,22.5 6,16 V8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16,4 V29.5" stroke="currentColor" stroke-width="1.2"/></svg>
+        <span>Spartan<small>Integration &amp; Consulting</small></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#why" class="nav-link">Why Us</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="tel:3218043281" class="nav-phone">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        321.804.3281
+      </a>
+      <a href="#contact" class="btn btn-primary nav-cta">Request Service</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <ul>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#process" class="mobile-link">Process</a></li>
+        <li><a href="#why" class="mobile-link">Why Us</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#reviews" class="mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-full mobile-cta">Request Service</a>
+      <button class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" type="button" aria-label="Switch to light mode">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        <span class="theme-label-dark">Light Mode</span>
+        <span class="theme-label-light">Dark Mode</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <svg class="hero-emblem" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16,4 L26,8 V16 C26,22.5 21.5,27 16,29.5 C10.5,27 6,22.5 6,16 V8 Z" stroke="currentColor" stroke-width="0.5" stroke-linejoin="round"/><path d="M16,4 V29.5" stroke="currentColor" stroke-width="0.4"/></svg>
+    <div class="container hero-content">
+      <span class="hero-tag">
+        <svg width="13" height="13" viewBox="0 0 32 32" fill="none"><path d="M16,4 L26,8 V16 C26,22.5 21.5,27 16,29.5 C10.5,27 6,22.5 6,16 V8 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        Oviedo, FL &middot; Serving Central Florida
+      </span>
+      <h1 class="hero-title">
+        <span class="hero-line"><span class="hero-line-inner">Systems That</span></span>
+        <span class="hero-line"><span class="hero-line-inner text-accent">Hold The Line</span></span>
+      </h1>
+      <p class="hero-sub">Spartan Integration designs, installs, and services the systems that protect your home or business — cameras, access control, alarms, and more, built around Central Florida properties.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Request a Service</a>
+        <a href="tel:3218043281" class="hero-phone-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call for a Free Estimate — 321.804.3281
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">12+</div>
+          <div class="hero-stat-label">Systems Covered</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">7 Days</div>
+          <div class="hero-stat-label">A Week Service</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">Central FL</div>
+          <div class="hero-stat-label">Service Area</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="marquee-item">Cameras <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Access Control <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Intrusion Detection <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Fire Alarm <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Gate Controllers <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Home Automation <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Electrical <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Structured Cabling <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Door Hardware <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Intercoms <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Wireless <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">TV Mounting <span class="sep">&#9670;</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Cameras <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Access Control <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Intrusion Detection <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Fire Alarm <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Gate Controllers <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Home Automation <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Electrical <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Structured Cabling <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Door Hardware <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Intercoms <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">Wireless <span class="sep">&#9670;</span></span>
+      <span class="marquee-item">TV Mounting <span class="sep">&#9670;</span></span>
+    </div>
+  </div>
+
+  <!-- ===== TRUSTED BY ===== -->
+  <div class="trusted-strip">
+    <div class="container trusted-inner">
+      <span class="trusted-label">Trusted By</span>
+      <div class="trusted-names">
+        <span class="trusted-name">Amazon</span>
+        <span class="trusted-sep">&#9670;</span>
+        <span class="trusted-name">Orlando Magic &middot; Amway Center</span>
+        <span class="trusted-sep">&#9670;</span>
+        <span class="trusted-name">Home Depot</span>
+        <span class="trusted-sep">&#9670;</span>
+        <span class="trusted-name">Fanuc</span>
+        <span class="trusted-sep">&#9670;</span>
+        <span class="trusted-name">DHL Orlando</span>
+        <span class="trusted-sep">&#9670;</span>
+        <span class="trusted-name">Queen Mary Basilica</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">What We Cover</span>
+        <h2 class="section-title">Every System, <span class="text-accent">One Team</span></h2>
+        <p class="section-sub">Every service below runs through the same three stages — designed, installed, and serviced by Spartan, for residential and commercial properties alike.</p>
+      </div>
+      <div class="service-carousel reveal-up" role="region" aria-roledescription="carousel" aria-label="Services we cover">
+        <button type="button" class="carousel-arrow carousel-arrow-prev" aria-label="Previous service">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/cameras.jpg" alt="HD security camera mounted for perimeter coverage" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                <h3 class="service-name">Cameras</h3>
+                <p class="service-desc">HD and IP camera systems with remote viewing, sized to cover every entrance and blind spot.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/access-control.jpg" alt="Keypad access control reader mounted beside a door" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/><path d="M6 15h4"/></svg></div>
+                <h3 class="service-name">Access Control</h3>
+                <p class="service-desc">Keycard, keypad, and keyless entry systems that control exactly who gets in, and when.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/intrusion-detection.jpg" alt="Door and window sensor for a monitored alarm system" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg></div>
+                <h3 class="service-name">Intrusion Detection</h3>
+                <p class="service-desc">Door, window, and motion sensors tied into a monitored alarm system.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/fire-alarm.jpg" alt="Smoke detector and fire alarm coverage on a ceiling" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+                <h3 class="service-name">Fire Alarm Systems</h3>
+                <p class="service-desc">Smoke, heat, and pull-station coverage designed to code for your building.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/gate-controllers.jpg" alt="Automated entry gate at a property driveway" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9l8-5 8 5v11"/><path d="M4 20h16M9 20v-6h6v6"/></svg></div>
+                <h3 class="service-name">Gate Controllers</h3>
+                <p class="service-desc">Automated entry gates with remote, keypad, or credential-based access.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/home-automation.jpg" alt="Technician programming a control panel for connected building systems" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+                <h3 class="service-name">Home Automation</h3>
+                <p class="service-desc">Lighting, locks, and climate tied together and controlled from one place.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/electrical.jpg" alt="Licensed electrician wiring an electrical panel" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+                <h3 class="service-name">Electrical</h3>
+                <p class="service-desc">Licensed electrical work to support every system we design and install.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/networks-cabling.jpg" alt="Structured network cabling run in a server rack" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13l-6 4M12 13l6 4"/></svg></div>
+                <h3 class="service-name">Networks &amp; Cabling</h3>
+                <p class="service-desc">Structured cabling and network runs built to carry every device you add later.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/door-hardware.jpg" alt="Electronic door strike hardware on a commercial door" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="15.5" cy="12" r="1"/></svg></div>
+                <h3 class="service-name">Electronic Door Hardware</h3>
+                <p class="service-desc">Strikes, mag-locks, and smart hardware retrofit onto your existing doors.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/intercom.jpg" alt="Video intercom unit mounted beside a front door" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/><circle cx="12" cy="14" r="3"/></svg></div>
+                <h3 class="service-name">Intercom Systems</h3>
+                <p class="service-desc">Video and audio entry intercoms for front doors, gates, and lobbies.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/wireless.jpg" alt="Network patch cables terminated into rack-mounted equipment" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></div>
+                <h3 class="service-name">Wireless Solutions</h3>
+                <p class="service-desc">Wireless coverage and wireless-linked devices where running cable isn't practical.</p>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="carousel-media"><img src="images/services/tv-mounting.jpg" alt="Flat-screen TV securely wall-mounted with cables hidden" loading="lazy"></div>
+              <div class="carousel-info">
+                <div class="service-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></div>
+                <h3 class="service-name">TV Mounting</h3>
+                <p class="service-desc">Secure wall-mounting for TVs and displays, with cables run clean and out of sight.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button type="button" class="carousel-arrow carousel-arrow-next" aria-label="Next service">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="carousel-meta">
+        <span class="carousel-count"><span class="carousel-count-current">1</span> / <span class="carousel-count-total">12</span></span>
+        <span class="carousel-hint">Cameras</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="section-padding bg-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section-title">Design. Install. <span class="text-accent">Service.</span></h2>
+        <p class="section-sub">The same three stages, every time — whether it's one camera or a full commercial buildout.</p>
+      </div>
+      <div class="process-wrap">
+        <div class="process-line">
+          <svg viewBox="0 0 100 2" preserveAspectRatio="none">
+            <path d="M0,1 L100,1"/>
+            <path class="draw" d="M0,1 L100,1"/>
+          </svg>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal-up">
+            <div class="process-node"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <div class="process-num">Stage 01</div>
+            <h3 class="process-name">Design</h3>
+            <p class="process-desc">We walk the property, map out every camera angle, sensor, and access point, and put together a plan built for how you actually use the space.</p>
+          </div>
+          <div class="process-step reveal-up">
+            <div class="process-node"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <div class="process-num">Stage 02</div>
+            <h3 class="process-name">Install</h3>
+            <p class="process-desc">Trained, experienced technicians run the work — wiring, mounting, and configuring every piece so it's ready to go, not left half-finished.</p>
+          </div>
+          <div class="process-step reveal-up">
+            <div class="process-node"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 9v3l2 2"/></svg></div>
+            <div class="process-num">Stage 03</div>
+            <h3 class="process-name">Service</h3>
+            <p class="process-desc">We walk you through the system before we leave, and we're available seven days a week after that if anything needs attention.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section id="why" class="section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2 class="section-title">Trusted Across <span class="text-accent">Central Florida</span></h2>
+      </div>
+      <div class="why-grid stagger-grid">
+        <div class="why-card">
+          <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 class="why-name">Trust &amp; Reliability</h3>
+          <p class="why-desc">Every technician is trained and experienced, from a company Central Florida has relied on since 2020.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3 class="why-name">Quality Workmanship</h3>
+          <p class="why-desc">We stand behind every install — nothing leaves your property until it's done right.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3 class="why-name">Open 7 Days a Week</h3>
+          <p class="why-desc">Service runs Monday through Sunday, because problems don't wait for business hours.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M14.8 9a2.7 2.7 0 0 0-2.6-2H11a2.5 2.5 0 0 0 0 5h1.5a2.5 2.5 0 0 1 0 5h-1.3a2.7 2.7 0 0 1-2.6-2M12 6v2m0 8v2"/></svg></div>
+          <h3 class="why-name">Affordable Pricing</h3>
+          <p class="why-desc">Honest, upfront estimates — no hidden fees, no surprises on the invoice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">Who We <span class="text-accent">Are</span></h2>
+      </div>
+      <div class="about-grid reveal-up">
+        <div class="about-media">
+          <img src="images/about/team-photo.jpg" alt="A Spartan Integration technician beside an installed access control panel" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p class="about-lead">Spartan Integration &amp; Consulting is a highly trusted partner for clients across Central Florida.</p>
+          <p class="about-copy">With professionally trained technicians and a wide range of services, we bring solid, dependable solutions to any technology need. We're committed to quality systems and quality service across Central Florida — offering installation, design, service, and monitoring for a full range of systems. Whether we're designing, servicing, or installing, your system needs are covered, and you'll be left with a long-lasting solution you can count on.</p>
+          <div class="about-meta">
+            <div class="about-meta-item">
+              <span class="about-meta-num">2020</span>
+              <span class="about-meta-label">Serving Central FL Since</span>
+            </div>
+            <div class="about-meta-item">
+              <span class="about-meta-num">7 Days</span>
+              <span class="about-meta-label">A Week Availability</span>
+            </div>
+            <div class="about-meta-item">
+              <span class="about-meta-num">EF20001737</span>
+              <span class="about-meta-label">FL Contractor License</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" class="section-padding bg-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="section-title">What Central Florida <span class="text-accent">Is Saying</span></h2>
+      </div>
+      <div class="reviews-grid stagger-grid">
+        <div class="review-card laurel-edge">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote">&ldquo;We needed a security system for our office. Spartan provided us a free estimate and the following day was able to install the security system and get our office secure. They provided training on the system and made sure we were ready to go. Their team is professional and polite and cleaned up after themselves — would highly recommend.&rdquo;</p>
+          <div class="review-foot">
+            <span class="review-name">Bonnie A.</span>
+            <span class="review-meta">Lakeland &middot; Jun 2020</span>
+          </div>
+        </div>
+        <div class="review-card laurel-edge">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p class="review-quote">&ldquo;We needed a camera system for our company showroom. I was able to get in contact with someone quickly, and Craig came out the next morning to provide a proposal. He came out the following day to install the system. The cameras worked great, and Craig made sure to review everything with us before leaving.&rdquo;</p>
+          <div class="review-foot">
+            <span class="review-name">Tigram J.</span>
+            <span class="review-meta">Saint Cloud &middot; Apr 2020</span>
+          </div>
+        </div>
+        <div class="review-card laurel-edge">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote">&ldquo;We needed keyless entry at our office complex. Spartan provided an estimate and installed it the following week. The installers were professional and always on time. If you're looking for a respectable company in the market for a system, I would highly recommend Spartan Integration.&rdquo;</p>
+          <div class="review-foot">
+            <span class="review-name">Jason P.</span>
+            <span class="review-meta">Kissimmee &middot; Aug 2020</span>
+          </div>
+        </div>
+      </div>
+      <p class="section-sub reveal-up" style="text-align:center;margin-top:36px;">Also trusted by customers in Winter Park, Longwood, Titusville, Jacksonville, Tampa, and beyond.</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA / CONTACT ===== -->
+  <section id="contact" class="cta-section">
+    <div class="container cta-grid">
+      <div class="reveal-up">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="cta-title">Book Our Systems Service</h2>
+        <p class="cta-sub">We're here to help. Call, email, or send a request below and we'll get back to you with a free estimate.</p>
+        <div class="cta-actions">
+          <a href="tel:3218043281" class="btn btn-primary btn-lg">Call 321.804.3281</a>
+          <a href="mailto:sales@spartan-integration.com" class="btn btn-outline btn-lg">Email Sales</a>
+        </div>
+        <div class="cta-rates">
+          <div class="cta-rate"><span class="cta-rate-num">$75<small>/hr</small></span><span class="cta-rate-label">Tech Service</span></div>
+          <div class="cta-rate"><span class="cta-rate-num">$135<small>/hr</small></span><span class="cta-rate-label">Emergency Service</span></div>
+          <div class="cta-rate"><span class="cta-rate-num">Free</span><span class="cta-rate-label">Estimates on New Installs</span></div>
+        </div>
+      </div>
+      <div class="cta-panel reveal-up">
+        <div class="cta-panel-row">
+          <div class="cta-panel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="cta-panel-label">Phone</div>
+            <div class="cta-panel-value"><a href="tel:3218043281">321.804.3281</a></div>
+          </div>
+        </div>
+        <div class="cta-panel-row">
+          <div class="cta-panel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div>
+            <div class="cta-panel-label">Email</div>
+            <div class="cta-panel-value"><a href="mailto:sales@spartan-integration.com">sales@spartan-integration.com</a></div>
+          </div>
+        </div>
+        <div class="cta-panel-row">
+          <div class="cta-panel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="cta-panel-label">Service Area</div>
+            <div class="cta-panel-value">Oviedo, FL 32765 &amp; Central Florida</div>
+          </div>
+        </div>
+        <div class="cta-panel-row">
+          <div class="cta-panel-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <div class="cta-panel-label">Office Hours</div>
+            <div class="cta-panel-value">Mon&ndash;Fri, 8am&ndash;5pm &middot; Service 7 days a week</div>
+          </div>
+        </div>
+        <div class="cta-panel-row">
+          <div class="cta-panel-icon"><svg width="18" height="18" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M16,4 L26,8 V16 C26,22.5 21.5,27 16,29.5 C10.5,27 6,22.5 6,16 V8 Z"/></svg></div>
+          <div>
+            <div class="cta-panel-label">FL Contractor License</div>
+            <div class="cta-panel-value">EF20001737</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <svg class="mark" viewBox="0 0 32 32" fill="none"><path d="M16,4 L26,8 V16 C26,22.5 21.5,27 16,29.5 C10.5,27 6,22.5 6,16 V8 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16,4 V29.5" stroke="currentColor" stroke-width="1.2"/></svg>
+            Spartan Integration
+          </div>
+          <p class="footer-tagline">Design, installation, and service for the systems that protect your home or business — cameras, access control, alarms, and more across Central Florida.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Sitemap</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:3218043281">321.804.3281</a></li>
+            <li><a href="mailto:sales@spartan-integration.com">sales@spartan-integration.com</a></li>
+            <li>Oviedo, FL 32765</li>
+            <li>FL License #EF20001737</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; <span id="year">2026</span> Spartan Integration &amp; Consulting Inc. All rights reserved.</span>
+      </div>
+      <p class="footer-note">Demo site built for portfolio purposes only — not a real business, and not affiliated with, endorsed by, or operated by any real company.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
