@@ -444,7 +444,6 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
   white-space: nowrap;
 }
 .marquee-track { display: inline-flex; align-items: center; animation: marqueeScroll 34s linear infinite; }
-.marquee-strip:hover .marquee-track { animation-play-state: paused; }
 .marquee-item {
   display: flex; align-items: center; gap: 12px;
   margin-right: 40px;

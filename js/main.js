@@ -102,6 +102,26 @@ if (document.querySelector('.hero')) {
 }
 
 /* ============================================================
+   MARQUEE — slow to half speed on hover instead of stopping
+   ============================================================ */
+(function () {
+  const strip = document.querySelector('.marquee-strip');
+  const track = document.querySelector('.marquee-track');
+  if (!strip || !track || prefersReducedMotion) return;
+
+  const getAnim = () => track.getAnimations().find(a => a.animationName === 'marqueeScroll');
+
+  strip.addEventListener('mouseenter', () => {
+    const anim = getAnim();
+    if (anim) anim.playbackRate = 0.5;
+  });
+  strip.addEventListener('mouseleave', () => {
+    const anim = getAnim();
+    if (anim) anim.playbackRate = 1;
+  });
+})();
+
+/* ============================================================
    SCROLL REVEALS
    ============================================================ */
 gsap.utils.toArray('.reveal-up').forEach(el => {
