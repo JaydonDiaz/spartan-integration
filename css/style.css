@@ -1,8 +1,9 @@
 /* ============================================================
    SPARTAN INTEGRATION & CONSULTING — style.css
    Design concept: the company's own real mark — a bronze Spartan
-   helmet, gold wordmark, red spear accent on black — carried
-   through as an actual design system instead of a banner graphic.
+   helmet and gold wordmark on black — carried through as an actual
+   design system instead of a banner graphic. Accent color is the
+   logo's gold throughout; there is no separate red accent.
    ============================================================ */
 
 /* ---- Tokens ---- */
@@ -14,10 +15,10 @@
   --surface-2:   #211f1b;
   --border:      rgba(172,157,86,0.16);
   --border-hover: rgba(172,157,86,0.4);
-  --accent:      #c22a2a;
-  --accent-rgb:  194,42,42;
-  --accent-dark: #941f1f;
-  --accent-glow: rgba(194,42,42,0.28);
+  --accent:      #ac9d56;
+  --accent-rgb:  172,157,86;
+  --accent-dark: #847941;
+  --accent-glow: rgba(172,157,86,0.28);
   --gold:        #ac9d56;
   --gold-rgb:    172,157,86;
   --gold-dark:   #847941;
@@ -35,22 +36,21 @@
 
 /* ---- Light theme ----
    Dark mode matches the brand as it exists today — black ground,
-   bronze/gold wordmark, red accent. Light mode carries the same
-   bronze + red system onto a warm carved-stone ground instead of
-   just inverting it. --bg-dark, the hero/nav/footer/CTA chrome,
-   stay fixed black across both themes — brand chrome, not page
-   canvas. */
+   bronze/gold wordmark. Light mode carries the same bronze system
+   onto a warm carved-stone ground instead of just inverting it.
+   --bg-dark, the hero/nav/footer/CTA chrome, stay fixed black
+   across both themes — brand chrome, not page canvas. */
 html[data-theme="light"] {
   --bg:          #f6f1e6;
   --bg-rgb:      246,241,230;
   --surface:     #fffdf9;
   --surface-2:   #ece1c9;
-  --border:      rgba(90,40,20,0.16);
-  --border-hover: rgba(90,40,20,0.34);
-  --accent:      #a3231f;
-  --accent-rgb:  163,35,31;
-  --accent-dark: #7d1a17;
-  --accent-glow: rgba(163,35,31,0.16);
+  --border:      rgba(115,105,57,0.16);
+  --border-hover: rgba(115,105,57,0.34);
+  --accent:      #736939;
+  --accent-rgb:  115,105,57;
+  --accent-dark: #5a522c;
+  --accent-glow: rgba(115,105,57,0.16);
   --gold:        #736939;
   --gold-rgb:    115,105,57;
   --gold-dark:   #5a522c;
