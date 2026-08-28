@@ -25,7 +25,7 @@
   --text-rgb:    242,239,230;
   --muted:       #9a9186;
   --muted-2:     #655e51;
-  --nav-h:       76px;
+  --nav-h:       96px;
   --radius:      6px;
   --radius-lg:   14px;
   --transition:  0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -222,7 +222,7 @@ p { color: var(--muted); }
   gap: 32px;
 }
 .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
-.nav-logo-img { display: block; height: 46px; width: auto; border-radius: 6px; }
+.nav-logo-img { display: block; height: 66px; width: auto; border-radius: 6px; }
 
 .nav-links {
   display: flex;
