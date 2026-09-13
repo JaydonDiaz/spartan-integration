@@ -674,8 +674,8 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
   transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0,0,0,0.16);
 }
-.why-icon { color: var(--accent); margin-bottom: 18px; transition: transform var(--transition), color var(--transition); }
-.why-card:hover .why-icon { color: var(--gold); transform: scale(1.08); }
+.why-icon { display: flex; justify-content: center; color: var(--accent); margin-bottom: 18px; transition: transform var(--transition), color var(--transition); }
+.why-card:hover .why-icon { color: var(--gold); transform: scale(1.08) rotate(-4deg); }
 .why-name { font-family: var(--font-display); font-weight: 600; font-size: 17px; text-transform: uppercase; margin-bottom: 10px; }
 .why-desc { font-size: 13.5px; line-height: 1.65; }
 
