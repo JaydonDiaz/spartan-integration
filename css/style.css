@@ -568,8 +568,7 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
   border: 1px solid rgba(var(--accent-rgb),0.25);
   color: var(--accent);
   display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 20px;
-  align-self: center;
+  margin-bottom: 20px;
   transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
 }
 .carousel-info .service-icon:hover {
