@@ -98,7 +98,7 @@ p { color: var(--muted); }
 .lead { font-size: 18px; color: var(--text); line-height: 1.7; }
 
 /* ---- Layout ---- */
-.container { max-width: 1220px; margin: 0 auto; padding: 0 24px; }
+.container { max-width: 1440px; margin: 0 auto; padding: 0 32px; }
 .section-padding { padding: 108px 0; }
 .bg-dark { background: var(--bg-dark); }
 
