@@ -291,3 +291,21 @@ window.addEventListener('load', () => {
   const id = setTimeout(() => ScrollTrigger.refresh(), 200);
   return () => clearTimeout(id);
 });
+
+/* ============================================================
+   FEATURED WORK — CYCLING CLIENT PHOTOS
+   ============================================================ */
+if (!prefersReducedMotion) {
+  document.querySelectorAll('.client-tile .client-media').forEach((media, tileIndex) => {
+    const imgs = media.querySelectorAll('img');
+    if (imgs.length < 2) return;
+    let active = 0;
+    setTimeout(() => {
+      setInterval(() => {
+        imgs[active].classList.remove('is-active');
+        active = (active + 1) % imgs.length;
+        imgs[active].classList.add('is-active');
+      }, 3600);
+    }, tileIndex * 550);
+  });
+}
