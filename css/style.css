@@ -687,6 +687,54 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
 .why-desc { font-size: 13.5px; line-height: 1.65; }
 
 /* ============================================================
+   FEATURED WORK / CLIENTS
+   ============================================================ */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.client-tile {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.client-tile:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.28);
+}
+.client-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.client-tile:hover img { transform: scale(1.06); }
+.client-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 45%, transparent 70%);
+  pointer-events: none;
+}
+.client-name {
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+/* ============================================================
    ABOUT
    ============================================================ */
 .about-grid {
@@ -823,6 +871,7 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
   .carousel-slide.is-prev { transform: translateX(-4%) scale(0.93); }
   .carousel-slide.is-next { transform: translateX(4%) scale(0.93); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .reviews-grid { grid-template-columns: repeat(2, 1fr); }
   .cta-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -833,6 +882,7 @@ html[data-theme="light"] .theme-toggle-mobile .theme-label-light { display: inli
   .process-grid { grid-template-columns: 1fr; gap: 40px; }
   .process-line { display: none; }
   .why-grid { grid-template-columns: 1fr; }
+  .clients-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
   .about-media { aspect-ratio: 4 / 3; }
