@@ -38,11 +38,14 @@
    Dark mode matches the brand as it exists today — black ground,
    bronze/gold wordmark. Light mode carries the same bronze system
    onto a warm carved-stone ground instead of just inverting it.
-   --bg-dark, the hero/nav/footer/CTA chrome, stay fixed black
-   across both themes — brand chrome, not page canvas. */
+   --bg-dark (hero/nav/footer/CTA chrome) stays dark-with-light-text
+   in both themes — brand chrome, not page canvas — but shifts to a
+   warm bronze-brown in light mode so those bands aren't pixel-
+   identical to dark mode regardless of the toggle. */
 html[data-theme="light"] {
   --bg:          #f6f1e6;
   --bg-rgb:      246,241,230;
+  --bg-dark:     #2b2317;
   --surface:     #fffdf9;
   --surface-2:   #ece1c9;
   --border:      rgba(100,81,38,0.16);
@@ -183,6 +186,11 @@ p { color: var(--muted); }
   color: var(--accent);
   transform: translateY(-2px);
 }
+/* .cta-section sits on the pinned-dark --bg-dark chrome regardless of
+   theme, so its outline button needs fixed light values instead of the
+   theme-reactive --text/--border-hover the base rule uses. */
+.cta-section .btn-outline { color: #f2efe6; border-color: rgba(242,239,230,0.34); }
+.cta-section .btn-outline:hover { border-color: #bc9b4e; color: #bc9b4e; }
 .btn-lg { padding: 18px 38px; font-size: 14px; }
 .btn-full { width: 100%; justify-content: center; }
 
