@@ -79,7 +79,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     btn.addEventListener('click', () => {
       const next = currentTheme() === 'light' ? 'dark' : 'light';
       try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
-      applyTheme(next);
+      if (!prefersReducedMotion && document.startViewTransition) {
+        document.startViewTransition(() => applyTheme(next));
+      } else {
+        applyTheme(next);
+      }
     });
   });
 })();
